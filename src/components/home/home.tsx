@@ -86,7 +86,7 @@ export const Home: React.FC<{}> = () => {
         <Badge badgeContent={getTotalIems(cartProducts)} color="error"></Badge>
         <AddShoppingCartIcon />
       </ButtonStyled>
-      <Grid container spacing={3}>
+      <Grid className="product-lists" container spacing={3}>
         {data?.map((product) => (
           <Grid item key={product.id} xs={12} sm={4}>
             <ItemCard
